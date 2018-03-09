@@ -11,7 +11,6 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -20,12 +19,37 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <Button class='button'> Hello </button>
-        <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
-        <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
+        <section class='reviewCard-outer'>
+          <Section class='logo-section'>
+            <img src='/img/Logo.svg'></img>
+          </section>
+          <Section class='rating-section'>
+            <p>
+              Our rating
+              <span>
+                <img src='/img/star-fill.png'>
+                <img src='/img/star-fill.png'>
+                <img src='/img/star-fill.png'>
+                <img src='/img/star-fill.png'>
+                <img src='/img/star-fill.png'>
+              </span>
+            </p>
+          </section>
+          <section class='main-description-section'>
+            <p>Incredibly fast and ultra secure. HD streaming. 24/7 support.</p>
+          </section>
+          <section class='visit-link-section'>
+            <button class='large-button'>Visit Site</button>
+            <p>at <span>expressvpn.com<span></p>
+          </section>
+          <section class='add-to-compare-section'>
+            <input id='checkBox' type='checkbox'></input>
+            <p>Add to compare</p>
+          </section>
+          <section class='grid-section'>
+            
+          </section>
+        </section>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

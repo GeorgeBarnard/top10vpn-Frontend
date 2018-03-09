@@ -19,6 +19,7 @@ $desktop: $medium
 /* Colors */
 
 $background: white
+$dark-blue: #011443
 $primary-color: #0366EE
 $secondary-color: #FCB42A
 $accent-color: #cdcdcd
@@ -28,7 +29,16 @@ $link-color: $primary-color
 $link-hover-color: darken($link-color, 15%)
 $highlight: #ffeea8
 $error: #D33C40
-$bq-border: 16px solid #f0f0f0
+$box-border: 1px solid #f0f0f0
+
+$caption-colour: #B9B9B9
+$grid-box: rgba(238,238,238,0.3)
+
+
+// Sizing
+
+$Mob-full: calc(100% - 5px)
+
 
 /* Typography */
 
@@ -79,7 +89,7 @@ $borders: $border-width $border-style $border-color
 
 /* Buttons */
 
-$button-background: $primary-color
+$button-background: #3333FF
 $button-background-hover: darken($button-background, 10%)
 $button-color: #ffffff
 $button-font-weight: 600
@@ -93,3 +103,16 @@ $button-text-transform: none
 
 // Round Buttons
 $round-buttons: 40px
+
+
+@font-face
+  font-family: 'Calibre-light'
+  src: url('/fonts/calibre/CalibreWeb-Light.woff')
+
+$calibre-light: 'Calibre-light'
+
+@font-face
+  font-family: 'Calibre-medium'
+  src: url('/fonts/calibre/CalibreWeb-Medium.woff')
+
+$calibre-medium: 'Calibre-Medium'
