@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="20px" viewBox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Chevron/Right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.29664446,3.71083823 C6.90405939,3.32238564 6.90070936,2.68922952 7.28916195,2.29664446 C7.67761454,1.90405939 8.31077066,1.90070936 8.70335572,2.28916195 L18.4142332,11.8978197 L8.71079926,21.7033951 C8.32232492,22.0959586 7.68916862,22.0992736 7.29660508,21.7107993 C6.90404154,21.3223249 6.90072658,20.6891686 7.28920092,20.2966051 L15.5857669,11.9127068 L7.29664446,3.71083823 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Button/L/with-icon" transform="translate(-99.000000, -13.000000)">
+            <g id="Stacked-Group" transform="translate(-4.000000, 3.000000)">
+                <g transform="translate(16.000000, 0.000000)" id="Icon/S/Chevron/Right">
+                    <g transform="translate(80.000000, 8.000000)">
+                        <rect id="bounding-box" x="0" y="0" width="24" height="24"></rect>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#BDBDBD" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="Mixin/Fill/White" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="evenodd">
+                            <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

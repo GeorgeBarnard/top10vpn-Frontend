@@ -19,68 +19,165 @@ html, body {
   margin: 0;
   padding: 0; }
 
+main {
+  padding-top: 57px; }
+
 .reviewCard-outer {
   width: calc(100% - 5px);
-  margin: 2.5px auto;
+  margin: 25px auto;
   border: 1px solid #f0f0f0;
-  width: 312px; }
-  .reviewCard-outer .logo-section {
-    width: calc(100% - 5px);
-    padding: 16px 0;
-    box-sizing: border-box;
+  width: 312px;
+  position: relative; }
+  @media only screen and (min-width: 768px) {
+    .reviewCard-outer {
+      width: 680px;
+      display: flex;
+      flex-wrap: wrap; } }
+  @media only screen and (min-width: 1024px) {
+    .reviewCard-outer {
+      width: 890px; } }
+  .reviewCard-outer .top-section {
     display: flex;
-    justify-content: center; }
-  .reviewCard-outer .rating-section {
-    margin: 0 0 8px;
-    font-family: "Calibre-light";
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .reviewCard-outer .rating-section p {
-      margin: 0; }
-      .reviewCard-outer .rating-section p span img {
-        vertical-align: -4px; }
-      .reviewCard-outer .rating-section p span:nth-child(1) {
-        margin-left: 2.5px; }
-  .reviewCard-outer .main-description-section {
-    margin-bottom: 16px; }
-    .reviewCard-outer .main-description-section p {
-      font-size: 24px;
-      text-align: center;
-      color: #011443;
-      font-family: "Calibre-Medium";
-      width: 90%;
-      margin: 0 auto; }
-  .reviewCard-outer .visit-link-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 24px; }
-    .reviewCard-outer .visit-link-section p {
-      text-align: center;
-      margin: 0;
-      width: 100%;
-      color: #B9B9B9;
-      font-family: "Calibre-Medium"; }
-  .reviewCard-outer .add-to-compare-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 16px; }
-    .reviewCard-outer .add-to-compare-section input {
-      margin-bottom: 0; }
-    .reviewCard-outer .add-to-compare-section p {
-      margin: 0;
-      display: inline-flex;
-      font-size: 20px;
-      font-family: "Calibre-Medium"; }
+    flex-wrap: wrap; }
+    @media only screen and (min-width: 768px) {
+      .reviewCard-outer .top-section {
+        width: 648px;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 1024px) {
+      .reviewCard-outer .top-section {
+        width: 100%;
+        padding: 0 24px;
+        box-sizing: border-box; } }
+    .reviewCard-outer .top-section .logo-section {
+      width: calc(100% - 5px);
+      padding: 16px 0 0 0;
+      margin-bottom: 8px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center; }
+      @media only screen and (min-width: 768px) {
+        .reviewCard-outer .top-section .logo-section {
+          width: 148px;
+          padding: 16px 0;
+          margin: 0; }
+          .reviewCard-outer .top-section .logo-section img {
+            width: 100%;
+            height: 96px; } }
+      @media only screen and (min-width: 1024px) {
+        .reviewCard-outer .top-section .logo-section {
+          width: 160px;
+          height: 136px; } }
+    .reviewCard-outer .top-section .vpn-info-wrapper {
+      width: 100%; }
+      @media only screen and (min-width: 768px) {
+        .reviewCard-outer .top-section .vpn-info-wrapper {
+          width: 272px;
+          height: fit-content;
+          margin-left: 27px; } }
+      @media only screen and (min-width: 1024px) {
+        .reviewCard-outer .top-section .vpn-info-wrapper {
+          margin-left: 32px;
+          width: 440px; } }
+      .reviewCard-outer .top-section .vpn-info-wrapper .rating-section {
+        margin: 0 0 8px;
+        font-family: "Calibre-light";
+        font-size: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; }
+        @media only screen and (min-width: 768px) {
+          .reviewCard-outer .top-section .vpn-info-wrapper .rating-section {
+            justify-content: left;
+            align-items: flex-start;
+            padding: 0;
+            margin-top: 15px; } }
+        .reviewCard-outer .top-section .vpn-info-wrapper .rating-section .rating-title {
+          display: none; }
+          @media only screen and (min-width: 768px) {
+            .reviewCard-outer .top-section .vpn-info-wrapper .rating-section .rating-title {
+              font-family: "Calibre-Medium";
+              font-size: 22px;
+              display: block;
+              width: 100%;
+              margin: 0; } }
+        .reviewCard-outer .top-section .vpn-info-wrapper .rating-section .rating-text {
+          margin: 0; }
+          .reviewCard-outer .top-section .vpn-info-wrapper .rating-section .rating-text span img {
+            vertical-align: -4px; }
+          .reviewCard-outer .top-section .vpn-info-wrapper .rating-section .rating-text span:nth-child(1) {
+            margin-left: 2.5px; }
+      .reviewCard-outer .top-section .vpn-info-wrapper .main-description-section {
+        margin-bottom: 16px; }
+        .reviewCard-outer .top-section .vpn-info-wrapper .main-description-section p {
+          font-size: 24px;
+          text-align: center;
+          color: #011443;
+          font-family: "Calibre-Medium";
+          width: 90%;
+          margin: 0 auto; }
+          @media only screen and (min-width: 768px) {
+            .reviewCard-outer .top-section .vpn-info-wrapper .main-description-section p {
+              text-align: left;
+              font-size: 22px;
+              width: 100%;
+              margin: 0; } }
+    .reviewCard-outer .top-section .visit-link-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 24px;
+      width: 100%; }
+      @media only screen and (min-width: 768px) {
+        .reviewCard-outer .top-section .visit-link-section {
+          width: 176px;
+          height: fit-content;
+          margin-left: 24px; } }
+      @media only screen and (min-width: 1024px) {
+        .reviewCard-outer .top-section .visit-link-section {
+          margin-left: 40px;
+          width: 170px; } }
+      .reviewCard-outer .top-section .visit-link-section p {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        color: #B9B9B9;
+        font-family: "Calibre-Medium"; }
+    .reviewCard-outer .top-section .add-to-compare-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 16px; }
+      @media only screen and (min-width: 768px) {
+        .reviewCard-outer .top-section .add-to-compare-section {
+          margin-bottom: auto;
+          margin: -56px 10px 0 10px; } }
+      @media only screen and (min-width: 1024px) {
+        .reviewCard-outer .top-section .add-to-compare-section {
+          margin-bottom: auto;
+          margin: -25px 10px 15px 10px; } }
+      .reviewCard-outer .top-section .add-to-compare-section input {
+        margin-bottom: 0; }
+      .reviewCard-outer .top-section .add-to-compare-section p {
+        margin: 0;
+        display: inline-flex;
+        font-size: 20px;
+        font-family: "Calibre-Medium"; }
+        @media only screen and (min-width: 768px) {
+          .reviewCard-outer .top-section .add-to-compare-section p {
+            font-size: 18px; } }
   .reviewCard-outer .grid-section {
     background-color: rgba(238, 238, 238, 0.3);
     width: 100%;
     padding: 10px 5px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    order: 1; }
+    @media only screen and (min-width: 768px) {
+      .reviewCard-outer .grid-section {
+        width: 50%;
+        order: 2;
+        padding: 10px 20px; } }
     .reviewCard-outer .grid-section table {
       width: 100%;
       border-collapse: collapse;
@@ -128,22 +225,57 @@ html, body {
           font-size: 16px;
           font-family: "Calibre-light";
           margin: 0; }
-  .reviewCard-outer .our-feedback .feedback-headings {
-    font-family: "Calibre-Medium";
-    font-size: 18px;
-    padding-left: 7.5px;
-    margin-bottom: 0; }
-  .reviewCard-outer .our-feedback ul {
-    padding-left: 25px;
-    margin-top: 7.5px;
-    max-width: 85%; }
-    .reviewCard-outer .our-feedback ul li {
-      font-size: 16px;
-      font-family: "Calibre-light";
-      padding: 7.5px 0; }
-  .reviewCard-outer .our-feedback .thumbs-down {
-    vertical-align: -6px;
-    margin-left: 3.5px; }
+  .reviewCard-outer .feedback-container {
+    order: 2;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .reviewCard-outer .feedback-container {
+        width: 50%;
+        order: 1;
+        border-top: 1px solid #fafafa; } }
+    .reviewCard-outer .feedback-container .like-less {
+      display: block; }
+      @media only screen and (min-width: 768px) {
+        .reviewCard-outer .feedback-container .like-less {
+          display: none; } }
+    .reviewCard-outer .feedback-container .our-feedback {
+      width: 100%; }
+      .reviewCard-outer .feedback-container .our-feedback .feedback-headings {
+        font-family: "Calibre-Medium";
+        font-size: 18px;
+        padding-left: 7.5px;
+        margin-bottom: 0; }
+        @media only screen and (min-width: 768px) {
+          .reviewCard-outer .feedback-container .our-feedback .feedback-headings {
+            padding-left: 15px; } }
+      .reviewCard-outer .feedback-container .our-feedback ul {
+        padding-left: 25px;
+        margin-top: 7.5px;
+        max-width: 85%; }
+        @media only screen and (min-width: 768px) {
+          .reviewCard-outer .feedback-container .our-feedback ul {
+            padding-left: 32.5px; } }
+        .reviewCard-outer .feedback-container .our-feedback ul li {
+          font-size: 16px;
+          font-family: "Calibre-light";
+          padding: 7.5px 0; }
+      .reviewCard-outer .feedback-container .our-feedback .thumbs-down {
+        vertical-align: -6px;
+        margin-left: 3.5px; }
+  .reviewCard-outer .our-winner {
+    position: absolute;
+    top: -32px;
+    width: 157px;
+    height: 32px;
+    background-color: #34E0A7;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+    .reviewCard-outer .our-winner p {
+      margin: 0;
+      font-family: "Calibre-Medium";
+      font-size: 18px;
+      padding-left: 7.5px; }
 
 .large-button {
   width: 172px;
@@ -155,5 +287,14 @@ html, body {
   font-family: "Calibre-Medium";
   font-size: 26px;
   color: white; }
+  .large-button img {
+    display: none; }
+  @media only screen and (min-width: 768px) {
+    .large-button {
+      width: 176px;
+      margin-top: 16px; }
+      .large-button img {
+        display: inline-block;
+        vertical-align: -2px; } }
 
 /*# sourceMappingURL=style.css.map */

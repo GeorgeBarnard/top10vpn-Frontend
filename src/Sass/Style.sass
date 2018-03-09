@@ -4,70 +4,149 @@
 html, body
   margin: 0
   padding: 0
+main
+  padding-top: 57px
 
 .reviewCard-outer
   width: $Mob-full
-  margin: 2.5px auto
+  margin: 25px auto
   border: $box-border
   width: 312px
-  .logo-section
-    width: $Mob-full
-    padding: 16px 0
-    box-sizing: border-box
-    display: flex
-    justify-content: center
-  .rating-section
-    margin: 0 0 8px
-    font-family: $calibre-light
-    font-size: 16px
-    display: flex
-    justify-content: center
-    align-items: center
-    p
-      margin: 0
-      span
-        img
-          vertical-align: -4px
-        &:nth-child(1)
-          margin-left: 2.5px
-  .main-description-section
-    margin-bottom: 16px
-    p
-      font-size: 24px
-      text-align: center
-      color: $dark-blue
-      font-family: $calibre-medium
-      width: 90%
-      margin: 0 auto
-  .visit-link-section
+  position: relative
+  @media only screen and (min-width: $medium)
+    width: 680px
     display: flex
     flex-wrap: wrap
-    justify-content: center
-    align-items: center
-    margin-bottom: 24px
-    p
-      text-align: center
-      margin: 0
-      width: 100%
-      color: $caption-colour
-      font-family: $calibre-medium
-  .add-to-compare-section
+  @media only screen and (min-width: $large)
+    width: 890px
+  .top-section
     display: flex
-    justify-content: center
-    align-items: center
-    margin-bottom: 16px
-    input
-      margin-bottom: 0
-    p
-      margin: 0
-      display: inline-flex
-      font-size: 20px
-      font-family: $calibre-medium
+    flex-wrap: wrap
+    @media only screen and (min-width: $medium)
+      width: 648px
+      margin: 0 auto
+    @media only screen and (min-width: $large)
+      width: 100%
+      padding: 0 24px
+      box-sizing: border-box
+    .logo-section
+      width: $Mob-full
+      padding: 16px 0 0 0
+      margin-bottom: 8px
+      box-sizing: border-box
+      display: flex
+      justify-content: center
+      @media only screen and (min-width: $medium)
+        width: 148px
+        padding: 16px 0
+        margin: 0
+        img
+          width: 100%
+          height: 96px
+      @media only screen and (min-width: $large)
+        width: 160px
+        height: 136px
+    .vpn-info-wrapper
+      width: 100%
+      @media only screen and (min-width: $medium)
+        width: 272px
+        height: fit-content
+        margin-left: 27px
+      @media only screen and (min-width: $large)
+        margin-left: 32px
+        width: 440px
+      .rating-section
+        margin: 0 0 8px
+        font-family: $calibre-light
+        font-size: 16px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        @media only screen and (min-width: $medium)
+          justify-content: left
+          align-items: flex-start
+          padding: 0
+          margin-top: 15px
+        .rating-title
+          display: none
+          @media only screen and (min-width: $medium)
+            font-family: $calibre-medium
+            font-size: 22px
+            display: block
+            width: 100%
+            margin: 0
+        .rating-text
+          margin: 0
+          span
+            img
+              vertical-align: -4px
+            &:nth-child(1)
+              margin-left: 2.5px
+      .main-description-section
+        margin-bottom: 16px
+        p
+          font-size: 24px
+          text-align: center
+          color: $dark-blue
+          font-family: $calibre-medium
+          width: 90%
+          margin: 0 auto
+          @media only screen and (min-width: $medium)
+            text-align: left
+            font-size: 22px
+            width: 100%
+            margin: 0
+    .visit-link-section
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center
+      margin-bottom: 24px
+      width: 100%
+      @media only screen and (min-width: $medium)
+        width: 176px
+        height: fit-content
+        margin-left: 24px
+      @media only screen and (min-width: $large)
+        margin-left: 40px
+        width: 170px
+      p
+        text-align: center
+        margin: 0
+        width: 100%
+        color: $caption-colour
+        font-family: $calibre-medium
+    .add-to-compare-section
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 0 auto 16px
+      @media only screen and (min-width: $medium)
+        margin-bottom: auto
+        margin: -56px 10px 0 10px
+      @media only screen and (min-width: $large)
+        margin-bottom: auto
+        margin: -25px 10px 15px 10px
+      input
+        margin-bottom: 0
+      p
+        margin: 0
+        display: inline-flex
+        font-size: 20px
+        font-family: $calibre-medium
+        @media only screen and (min-width: $medium)
+          font-size: 18px
   .grid-section
     background-color: $grid-box
     width: 100%
     padding: 10px 5px
     box-sizing: border-box
+    order: 1
+    @media only screen and (min-width: $medium)
+      width: 50%
+      order: 2
+      padding: 10px 20px
     table
       width: 100%
       border-collapse: collapse
@@ -119,28 +198,53 @@ html, body
             font-size: 16px
             font-family: $calibre-light
             margin: 0
-  .our-feedback
-    .feedback-headings
+  .feedback-container
+    order: 2
+    width: 100%
+    @media only screen and (min-width: $medium)
+      width: 50%
+      order: 1
+      border-top: $light-box-border
+    .like-less
+      display: block
+      @media only screen and (min-width: $medium)
+        display: none
+    .our-feedback
+      width: 100%
+      .feedback-headings
+        font-family: $calibre-medium
+        font-size: 18px
+        padding-left: 7.5px
+        margin-bottom: 0
+        @media only screen and (min-width: $medium)
+          padding-left: 15px
+      ul
+        padding-left: 25px
+        margin-top: 7.5px
+        max-width: 85%
+        @media only screen and (min-width: $medium)
+          padding-left: 32.5px
+        li
+          font-size: 16px
+          font-family: $calibre-light
+          padding: 7.5px 0
+      .thumbs-down
+        vertical-align: -6px
+        margin-left: 3.5px
+  .our-winner
+    position: absolute
+    top: -32px
+    width: 157px
+    height: 32px
+    background-color: $mint-green
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    p
+      margin: 0
       font-family: $calibre-medium
       font-size: 18px
       padding-left: 7.5px
-      margin-bottom: 0
-    ul
-      padding-left: 25px
-      margin-top: 7.5px
-      max-width: 85%
-      li
-        font-size: 16px
-        font-family: $calibre-light
-        padding: 7.5px 0
-    .thumbs-down
-      vertical-align: -6px
-      margin-left: 3.5px
-
-
-
-
-
 
 // Buttons
 
@@ -154,3 +258,11 @@ html, body
   font-family: $calibre-medium
   font-size: 26px
   color: white
+  img
+    display: none
+  @media only screen and (min-width: $medium)
+    width: 176px
+    margin-top: 16px
+    img
+      display: inline-block
+      vertical-align: -2px
