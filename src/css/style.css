@@ -79,7 +79,71 @@ html, body {
   .reviewCard-outer .grid-section {
     background-color: rgba(238, 238, 238, 0.3);
     width: 100%;
-    height: 100px; }
+    padding: 10px 5px;
+    box-sizing: border-box; }
+    .reviewCard-outer .grid-section table {
+      width: 100%;
+      border-collapse: collapse;
+      padding: 10px;
+      box-sizing: border-box; }
+      .reviewCard-outer .grid-section table .row {
+        padding: 0 10px;
+        border-bottom: 1px solid #E2E2E2; }
+        .reviewCard-outer .grid-section table .row th {
+          text-align: left;
+          padding: 7.5px 0; }
+          .reviewCard-outer .grid-section table .row th:first-child p {
+            font-family: "Calibre-Medium";
+            font-weight: 300; }
+          .reviewCard-outer .grid-section table .row th:last-child p {
+            padding-left: 10px;
+            border-left: 1px solid #E2E2E2;
+            box-sizing: border-box;
+            font-family: "Calibre-light";
+            font-weight: 100; }
+          .reviewCard-outer .grid-section table .row th:last-child a p {
+            font-family: "Calibre-Medium";
+            font-weight: 300; }
+          .reviewCard-outer .grid-section table .row th:last-child a:-webkit-any-link {
+            text-decoration: none; }
+          .reviewCard-outer .grid-section table .row th p {
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; }
+    .reviewCard-outer .grid-section .app-section p {
+      font-family: "Calibre-Medium";
+      margin: 7.5px 0 5px;
+      font-size: 18px; }
+    .reviewCard-outer .grid-section .app-section .icon-container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap; }
+      .reviewCard-outer .grid-section .app-section .icon-container .app-icon {
+        width: 20%;
+        text-align: center; }
+        .reviewCard-outer .grid-section .app-section .icon-container .app-icon img {
+          width: 40px; }
+        .reviewCard-outer .grid-section .app-section .icon-container .app-icon p {
+          font-size: 16px;
+          font-family: "Calibre-light";
+          margin: 0; }
+  .reviewCard-outer .our-feedback .feedback-headings {
+    font-family: "Calibre-Medium";
+    font-size: 18px;
+    padding-left: 7.5px;
+    margin-bottom: 0; }
+  .reviewCard-outer .our-feedback ul {
+    padding-left: 25px;
+    margin-top: 7.5px;
+    max-width: 85%; }
+    .reviewCard-outer .our-feedback ul li {
+      font-size: 16px;
+      font-family: "Calibre-light";
+      padding: 7.5px 0; }
+  .reviewCard-outer .our-feedback .thumbs-down {
+    vertical-align: -6px;
+    margin-left: 3.5px; }
 
 .large-button {
   width: 172px;
