@@ -313,7 +313,8 @@ main {
         font-family: "Calibre-Medium";
         font-size: 18px;
         padding-left: 7.5px;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        font-weight: 500; }
         @media only screen and (min-width: 768px) {
           .reviewCard-outer .feedback-container .our-feedback .feedback-headings {
             padding-left: 15px; } }
