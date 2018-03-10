@@ -7,10 +7,10 @@
 /* Buttons */
 @font-face {
   font-family: "Calibre-light";
-  src: url("fonts/calibre/CalibreWeb-Light.woff"); }
+  src: url("/fonts/calibre/CalibreWeb-Light.woff"); }
 @font-face {
   font-family: "Calibre-medium";
-  src: url("fonts/calibre/CalibreWeb-Medium.woff"); }
+  src: url("/fonts/calibre/CalibreWeb-Medium.woff"); }
 html, body {
   margin: 0;
   padding: 0; }
