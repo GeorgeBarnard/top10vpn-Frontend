@@ -7,10 +7,10 @@
 /* Buttons */
 @font-face {
   font-family: "Calibre-light";
-  src: url("/fonts/calibre/CalibreWeb-Light.woff"); }
+  src: url("fonts/calibre/CalibreWeb-Light.woff"); }
 @font-face {
   font-family: "Calibre-medium";
-  src: url("/fonts/calibre/CalibreWeb-Medium.woff"); }
+  src: url("fonts/calibre/CalibreWeb-Medium.woff"); }
 html, body {
   margin: 0;
   padding: 0; }
@@ -173,7 +173,7 @@ main {
         color: #979797; }
         .reviewCard-outer .top-section .add-to-compare-section .add-button p {
           font-size: 26px;
-          margin: -3px 0 0 0; }
+          margin: -1px 0 0 0; }
         @media only screen and (min-width: 768px) {
           .reviewCard-outer .top-section .add-to-compare-section .add-button {
             width: 24px;
@@ -226,7 +226,7 @@ main {
           padding: 7.5px 0; }
           .reviewCard-outer .grid-section table .row th:first-child p {
             font-family: "Calibre-Medium";
-            font-weight: 300; }
+            font-weight: 500; }
           .reviewCard-outer .grid-section table .row th:last-child p {
             padding-left: 10px;
             border-left: 1px solid #E2E2E2;
@@ -235,7 +235,7 @@ main {
             font-weight: 100; }
           .reviewCard-outer .grid-section table .row th:last-child a p {
             font-family: "Calibre-Medium";
-            font-weight: 300; }
+            font-weight: 500; }
           .reviewCard-outer .grid-section table .row th:last-child a:-webkit-any-link {
             text-decoration: none; }
           .reviewCard-outer .grid-section table .row th p {
@@ -350,6 +350,9 @@ main {
   cursor: pointer;
   padding: 0;
   height: 48px;
+  border: none;
+  border-bottom: 2px solid #0000cc;
+  border-radius: 2.5px;
   margin: 0 auto;
   text-align: center;
   background-color: #3333FF;

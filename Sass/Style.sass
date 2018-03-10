@@ -1,9 +1,9 @@
-
 @import variables
 
 html, body
   margin: 0
   padding: 0
+
 main
   padding-top: 100px
 
@@ -147,7 +147,7 @@ main
         color: $checkBoxColour
         p
           font-size: 26px
-          margin: -3px 0 0 0
+          margin: -1px 0 0 0
         @media only screen and (min-width: $medium)
           width: 24px
           height: 24px
@@ -196,7 +196,7 @@ main
           &:first-child
             p
               font-family: $calibre-medium
-              font-weight: 300
+              font-weight: 500
           &:last-child
             p
               padding-left: 10px
@@ -207,7 +207,7 @@ main
             a
               p
                 font-family: $calibre-medium
-                font-weight: 300
+                font-weight: 500
               &:-webkit-any-link
                 text-decoration: none
           p
@@ -318,6 +318,9 @@ main
   cursor: pointer
   padding: 0
   height: 48px
+  border: none
+  border-bottom: 2px solid $button-background-hover
+  border-radius: 2.5px
   margin: 0 auto
   text-align: center
   background-color: $button-background
