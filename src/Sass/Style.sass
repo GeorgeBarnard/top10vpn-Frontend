@@ -5,11 +5,11 @@ html, body
   margin: 0
   padding: 0
 main
-  padding-top: 57px
+  padding-top: 100px
 
 .reviewCard-outer
   width: $Mob-full
-  margin: 25px auto
+  margin: 0 auto 40px
   border: $box-border
   width: 312px
   position: relative
@@ -68,6 +68,8 @@ main
           align-items: flex-start
           padding: 0
           margin-top: 15px
+        @media only screen and (min-width: $large)
+          margin-top: 20px
         .rating-title
           display: none
           @media only screen and (min-width: $medium)
@@ -83,6 +85,9 @@ main
               vertical-align: -4px
             &:nth-child(1)
               margin-left: 2.5px
+          .star-empty
+            vertical-align: -7px
+            margin-top: 2.5px
       .main-description-section
         margin-bottom: 16px
         p
@@ -124,12 +129,27 @@ main
       margin: 0 auto 16px
       @media only screen and (min-width: $medium)
         margin-bottom: auto
-        margin: -56px 10px 0 10px
+        margin: -56px 10px 0 0px
       @media only screen and (min-width: $large)
         margin-bottom: auto
-        margin: -25px 10px 15px 10px
-      input
-        margin-bottom: 0
+        margin: -25px 10px 15px 0px
+      .add-button
+        cursor: pointer
+        width: 30px
+        height: 30px
+        margin: 1.5px 7.5px 0 0
+        border: $checkBox
+        box-sizing: border-box
+        display: flex
+        justify-content: center
+        align-items: center
+        color: $checkBoxColour
+        p
+          font-size: 26px
+          margin: -3px 0 0 0
+        @media only screen and (min-width: $medium)
+          width: 24px
+          height: 24px
       p
         margin: 0
         display: inline-flex
@@ -209,6 +229,8 @@ main
       display: block
       @media only screen and (min-width: $medium)
         display: none
+    .like-less-shown
+      display: block
     .our-feedback
       width: 100%
       .feedback-headings
@@ -250,6 +272,7 @@ main
 
 .large-button
   width: 172px
+  cursor: pointer
   padding: 0
   height: 48px
   margin: 0 auto
@@ -257,7 +280,10 @@ main
   background-color: $button-background
   font-family: $calibre-medium
   font-size: 26px
-  color: white
+  color: $button-color
+  transition: $transition
+  &:hover
+    background-color: $button-background-hover
   img
     display: none
   @media only screen and (min-width: $medium)
@@ -266,3 +292,5 @@ main
     img
       display: inline-block
       vertical-align: -2px
+  @media only screen and (min-width: $large)
+    margin-top: 25px

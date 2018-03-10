@@ -3,11 +3,7 @@
  *
  * All variables and most of the configuration is defined on this page. */
 /* Containers */
-/* Breakpoints */
 /* Colors */
-/* Typography */
-/* Padding */
-/* Borders */
 /* Buttons */
 @font-face {
   font-family: "Calibre-light";
@@ -20,11 +16,11 @@ html, body {
   padding: 0; }
 
 main {
-  padding-top: 57px; }
+  padding-top: 100px; }
 
 .reviewCard-outer {
   width: calc(100% - 5px);
-  margin: 25px auto;
+  margin: 0 auto 40px;
   border: 1px solid #f0f0f0;
   width: 312px;
   position: relative; }
@@ -92,6 +88,9 @@ main {
             align-items: flex-start;
             padding: 0;
             margin-top: 15px; } }
+        @media only screen and (min-width: 1024px) {
+          .reviewCard-outer .top-section .vpn-info-wrapper .rating-section {
+            margin-top: 20px; } }
         .reviewCard-outer .top-section .vpn-info-wrapper .rating-section .rating-title {
           display: none; }
           @media only screen and (min-width: 768px) {
@@ -107,6 +106,9 @@ main {
             vertical-align: -4px; }
           .reviewCard-outer .top-section .vpn-info-wrapper .rating-section .rating-text span:nth-child(1) {
             margin-left: 2.5px; }
+          .reviewCard-outer .top-section .vpn-info-wrapper .rating-section .rating-text .star-empty {
+            vertical-align: -7px;
+            margin-top: 2.5px; }
       .reviewCard-outer .top-section .vpn-info-wrapper .main-description-section {
         margin-bottom: 16px; }
         .reviewCard-outer .top-section .vpn-info-wrapper .main-description-section p {
@@ -152,13 +154,29 @@ main {
       @media only screen and (min-width: 768px) {
         .reviewCard-outer .top-section .add-to-compare-section {
           margin-bottom: auto;
-          margin: -56px 10px 0 10px; } }
+          margin: -56px 10px 0 0px; } }
       @media only screen and (min-width: 1024px) {
         .reviewCard-outer .top-section .add-to-compare-section {
           margin-bottom: auto;
-          margin: -25px 10px 15px 10px; } }
-      .reviewCard-outer .top-section .add-to-compare-section input {
-        margin-bottom: 0; }
+          margin: -25px 10px 15px 0px; } }
+      .reviewCard-outer .top-section .add-to-compare-section .add-button {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        margin: 1.5px 7.5px 0 0;
+        border: 2px solid #979797;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #979797; }
+        .reviewCard-outer .top-section .add-to-compare-section .add-button p {
+          font-size: 26px;
+          margin: -3px 0 0 0; }
+        @media only screen and (min-width: 768px) {
+          .reviewCard-outer .top-section .add-to-compare-section .add-button {
+            width: 24px;
+            height: 24px; } }
       .reviewCard-outer .top-section .add-to-compare-section p {
         margin: 0;
         display: inline-flex;
@@ -232,12 +250,14 @@ main {
       .reviewCard-outer .feedback-container {
         width: 50%;
         order: 1;
-        border-top: 1px solid #fafafa; } }
+        border-top: 1px solid #fafaf; } }
     .reviewCard-outer .feedback-container .like-less {
       display: block; }
       @media only screen and (min-width: 768px) {
         .reviewCard-outer .feedback-container .like-less {
           display: none; } }
+    .reviewCard-outer .feedback-container .like-less-shown {
+      display: block; }
     .reviewCard-outer .feedback-container .our-feedback {
       width: 100%; }
       .reviewCard-outer .feedback-container .our-feedback .feedback-headings {
@@ -279,6 +299,7 @@ main {
 
 .large-button {
   width: 172px;
+  cursor: pointer;
   padding: 0;
   height: 48px;
   margin: 0 auto;
@@ -286,7 +307,10 @@ main {
   background-color: #3333FF;
   font-family: "Calibre-Medium";
   font-size: 26px;
-  color: white; }
+  color: #ffffff;
+  transition: 0.2s ease-in; }
+  .large-button:hover {
+    background-color: #0000cc; }
   .large-button img {
     display: none; }
   @media only screen and (min-width: 768px) {
@@ -296,5 +320,8 @@ main {
       .large-button img {
         display: inline-block;
         vertical-align: -2px; } }
+  @media only screen and (min-width: 1024px) {
+    .large-button {
+      margin-top: 25px; } }
 
 /*# sourceMappingURL=style.css.map */
