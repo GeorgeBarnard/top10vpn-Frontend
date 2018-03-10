@@ -20,7 +20,7 @@ main {
 
 .reviewCard-outer {
   width: calc(100% - 5px);
-  margin: 0 auto 40px
+  margin: 0 auto 40px;
   border: 1px solid #f0f0f0;
   width: 312px;
   position: relative; }
@@ -78,7 +78,7 @@ main {
           width: 440px; } }
       .reviewCard-outer .top-section .vpn-info-wrapper .rating-section {
         margin: 0 0 8px;
-        font-family: "Calibre-light", Fallback;
+        font-family: "Calibre-light", Fallback, sans-serif;
         font-size: 16px;
         display: flex;
         flex-wrap: wrap;
@@ -97,7 +97,7 @@ main {
           display: none; }
           @media only screen and (min-width: 768px) {
             .reviewCard-outer .top-section .vpn-info-wrapper .rating-section .rating-title {
-              font-family: "Calibre-Medium", Fallback;
+              font-family: "Calibre-Medium", Fallback, sans-serif;
               font-size: 22px;
               display: block;
               width: 100%;
@@ -117,7 +117,7 @@ main {
           font-size: 24px;
           text-align: center;
           color: #011443;
-          font-family: "Calibre-Medium", Fallback;
+          font-family: "Calibre-Medium", Fallback, sans-serif;
           width: 90%;
           margin: 0 auto;
           font-weight: 500; }
@@ -148,7 +148,7 @@ main {
         margin: 0;
         width: 100%;
         color: #B9B9B9;
-        font-family: "Calibre-Medium", Fallback; }
+        font-family: "Calibre-Medium", Fallback, sans-serif; }
     .reviewCard-outer .top-section .add-to-compare-section {
       display: flex;
       justify-content: center;
@@ -184,7 +184,7 @@ main {
         margin: 0;
         display: inline-flex;
         font-size: 20px;
-        font-family: "Calibre-Medium", Fallback;
+        font-family: "Calibre-Medium", Fallback, sans-serif;
         font-weight: 500; }
         @media only screen and (min-width: 768px) {
           .reviewCard-outer .top-section .add-to-compare-section p {
@@ -228,16 +228,16 @@ main {
           text-align: left;
           padding: 7.5px 0; }
           .reviewCard-outer .grid-section table .row th:first-child p {
-            font-family: "Calibre-Medium", Fallback;
+            font-family: "Calibre-Medium", Fallback, sans-serif;
             font-weight: 500; }
           .reviewCard-outer .grid-section table .row th:last-child p {
             padding-left: 10px;
             border-left: 1px solid #E2E2E2;
             box-sizing: border-box;
-            font-family: "Calibre-light", Fallback;
+            font-family: "Calibre-light", Fallback, sans-serif;
             font-weight: 300; }
           .reviewCard-outer .grid-section table .row th:last-child a p {
-            font-family: "Calibre-Medium", Fallback;
+            font-family: "Calibre-Medium", Fallback, sans-serif;
             font-weight: 500; }
           .reviewCard-outer .grid-section table .row th:last-child a:-webkit-any-link {
             text-decoration: none; }
@@ -263,7 +263,7 @@ main {
           width: calc(100% + 20px);
           left: -20px; } }
       .reviewCard-outer .grid-section .app-section p {
-        font-family: "Calibre-Medium", Fallback;
+        font-family: "Calibre-Medium", Fallback, sans-serif;
         margin: 7.5px 0 5px;
         font-size: 18px; }
       .reviewCard-outer .grid-section .app-section .icon-container {
@@ -285,7 +285,7 @@ main {
             width: 40px; }
           .reviewCard-outer .grid-section .app-section .icon-container .app-icon p {
             font-size: 15px;
-            font-family: "Calibre-light", Fallback;
+            font-family: "Calibre-light", Fallback, sans-serif;
             margin: 0; }
   .reviewCard-outer .feedback-container {
     order: 2;
@@ -313,7 +313,7 @@ main {
     .reviewCard-outer .feedback-container .our-feedback {
       width: 100%; }
       .reviewCard-outer .feedback-container .our-feedback .feedback-headings {
-        font-family: "Calibre-Medium", Fallback;
+        font-family: "Calibre-Medium", Fallback, sans-serif;
         font-size: 18px;
         padding-left: 7.5px;
         margin-bottom: 0;
@@ -330,7 +330,7 @@ main {
             padding-left: 32.5px; } }
         .reviewCard-outer .feedback-container .our-feedback ul li {
           font-size: 18px;
-          font-family: "Calibre-light", Fallback;
+          font-family: "Calibre-light", Fallback, sans-serif;
           padding: 7.5px 0; }
       .reviewCard-outer .feedback-container .our-feedback .thumbs-down {
         vertical-align: -6px; }
@@ -345,7 +345,7 @@ main {
     justify-content: flex-start; }
     .reviewCard-outer .our-winner p {
       margin: 0;
-      font-family: "Calibre-Medium", Fallback;
+      font-family: "Calibre-Medium", Fallback, sans-serif;
       font-size: 18px;
       padding-left: 7.5px;
       font-weight: 500; }
@@ -361,7 +361,7 @@ main {
   margin: 0 auto;
   text-align: center;
   background-color: #3333FF;
-  font-family: "Calibre-Medium", Fallback;
+  font-family: "Calibre-Medium", Fallback, sans-serif;
   font-size: 26px;
   color: #ffffff;
   transition: 0.2s ease-in; }
