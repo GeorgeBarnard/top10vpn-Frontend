@@ -47,6 +47,7 @@ main {
         box-sizing: border-box; } }
     .reviewCard-outer .top-section .logo-section {
       width: calc(100% - 5px);
+      margin-top: 0;
       padding: 16px 0 0 0;
       margin-bottom: 8px;
       box-sizing: border-box;
