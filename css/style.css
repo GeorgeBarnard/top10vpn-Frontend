@@ -31,7 +31,8 @@ main {
       flex-wrap: wrap; } }
   @media only screen and (min-width: 1024px) {
     .reviewCard-outer {
-      width: 890px; } }
+      width: 890px;
+      border: 2px solid #f0f0f0; } }
   .reviewCard-outer .top-section {
     display: flex;
     flex-wrap: wrap; }
@@ -186,24 +187,40 @@ main {
           .reviewCard-outer .top-section .add-to-compare-section p {
             font-size: 18px; } }
   .reviewCard-outer .grid-section {
+    position: relative;
     background-color: rgba(238, 238, 238, 0.3);
     width: 100%;
     padding: 10px 5px;
     box-sizing: border-box;
     order: 1; }
+    .reviewCard-outer .grid-section::before {
+      width: calc(100% - 15px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #EEEEEE;
+      height: 2px;
+      content: ""; }
     @media only screen and (min-width: 768px) {
       .reviewCard-outer .grid-section {
         width: 50%;
         order: 2;
-        padding: 10px 20px; } }
+        padding: 10px 20px;
+        border-left: 2px solid #EEEEEE; } }
     .reviewCard-outer .grid-section table {
       width: 100%;
       border-collapse: collapse;
       padding: 10px;
       box-sizing: border-box; }
+      @media only screen and (min-width: 768px) {
+        .reviewCard-outer .grid-section table {
+          margin-bottom: 10px; } }
       .reviewCard-outer .grid-section table .row {
         padding: 0 10px;
         border-bottom: 1px solid #E2E2E2; }
+        @media only screen and (min-width: 768px) {
+          .reviewCard-outer .grid-section table .row {
+            border-bottom: none; } }
         .reviewCard-outer .grid-section table .row th {
           text-align: left;
           padding: 7.5px 0; }
@@ -226,31 +243,63 @@ main {
             margin: 0;
             padding: 0;
             box-sizing: border-box; }
-    .reviewCard-outer .grid-section .app-section p {
-      font-family: "Calibre-Medium";
-      margin: 7.5px 0 5px;
-      font-size: 18px; }
-    .reviewCard-outer .grid-section .app-section .icon-container {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap; }
-      .reviewCard-outer .grid-section .app-section .icon-container .app-icon {
-        width: 20%;
-        text-align: center; }
-        .reviewCard-outer .grid-section .app-section .icon-container .app-icon img {
-          width: 40px; }
-        .reviewCard-outer .grid-section .app-section .icon-container .app-icon p {
-          font-size: 16px;
-          font-family: "Calibre-light";
-          margin: 0; }
+    .reviewCard-outer .grid-section .app-section {
+      position: relative;
+      padding-top: 1px; }
+      @media only screen and (min-width: 768px) {
+        .reviewCard-outer .grid-section .app-section::before {
+          content: "";
+          width: calc(100% + 40px);
+          position: absolute;
+          left: -20px;
+          top: -2.5px;
+          background-color: #EEEEEE;
+          height: 2px; } }
+      @media only screen and (min-width: 1024px) {
+        .reviewCard-outer .grid-section .app-section::before {
+          width: calc(100% + 20px);
+          left: -20px; } }
+      .reviewCard-outer .grid-section .app-section p {
+        font-family: "Calibre-Medium";
+        margin: 7.5px 0 5px;
+        font-size: 18px; }
+      .reviewCard-outer .grid-section .app-section .icon-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: auto; }
+        @media only screen and (min-width: 1024px) {
+          .reviewCard-outer .grid-section .app-section .icon-container {
+            justify-content: flex-end;
+            margin-top: -25px; } }
+        .reviewCard-outer .grid-section .app-section .icon-container .app-icon {
+          width: 20%;
+          text-align: center; }
+          @media only screen and (min-width: 1024px) {
+            .reviewCard-outer .grid-section .app-section .icon-container .app-icon {
+              width: 16.6666%; } }
+          .reviewCard-outer .grid-section .app-section .icon-container .app-icon img {
+            width: 40px; }
+          .reviewCard-outer .grid-section .app-section .icon-container .app-icon p {
+            font-size: 16px;
+            font-family: "Calibre-light";
+            margin: 0; }
   .reviewCard-outer .feedback-container {
     order: 2;
-    width: 100%; }
+    width: 100%;
+    position: relative; }
     @media only screen and (min-width: 768px) {
       .reviewCard-outer .feedback-container {
         width: 50%;
-        order: 1;
-        border-top: 1px solid #fafaf; } }
+        order: 1; }
+        .reviewCard-outer .feedback-container::before {
+          width: calc(100% - 15px);
+          position: absolute;
+          top: 0;
+          left: 15px;
+          background-color: #EEEEEE;
+          height: 2px;
+          content: ""; } }
     .reviewCard-outer .feedback-container .like-less {
       display: block; }
       @media only screen and (min-width: 768px) {
@@ -280,8 +329,7 @@ main {
           font-family: "Calibre-light";
           padding: 7.5px 0; }
       .reviewCard-outer .feedback-container .our-feedback .thumbs-down {
-        vertical-align: -6px;
-        margin-left: 3.5px; }
+        vertical-align: -6px; }
   .reviewCard-outer .our-winner {
     position: absolute;
     top: -32px;

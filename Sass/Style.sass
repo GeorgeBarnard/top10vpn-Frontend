@@ -19,6 +19,7 @@ main
     flex-wrap: wrap
   @media only screen and (min-width: $large)
     width: 890px
+    border: $box-border-large
   .top-section
     display: flex
     flex-wrap: wrap
@@ -158,23 +159,37 @@ main
         @media only screen and (min-width: $medium)
           font-size: 18px
   .grid-section
+    position: relative
     background-color: $grid-box
     width: 100%
     padding: 10px 5px
     box-sizing: border-box
     order: 1
+    &::before
+      width: calc(100% - 15px)
+      position: absolute
+      top: 0
+      left: 0
+      background-color: $light-box-border
+      height: 2px
+      content: ''
     @media only screen and (min-width: $medium)
       width: 50%
       order: 2
       padding: 10px 20px
+      border-left: 2px solid $light-box-border
     table
       width: 100%
       border-collapse: collapse
       padding: 10px
       box-sizing: border-box
+      @media only screen and (min-width: $medium)
+        margin-bottom: 10px
       .row
         padding: 0 10px
         border-bottom: $grey-border
+        @media only screen and (min-width: $medium)
+          border-bottom: none
         th
           text-align: left
           padding: 7.5px 0
@@ -201,6 +216,21 @@ main
             padding: 0
             box-sizing: border-box
     .app-section
+      position: relative
+      padding-top: 1px
+      @media only screen and (min-width: $medium)
+        &::before
+          content: ''
+          width: calc(100% + 40px)
+          position: absolute
+          left: -20px
+          top: -2.5px
+          background-color: $light-box-border
+          height: 2px
+      @media only screen and (min-width: $large)
+        &::before
+          width: calc(100% + 20px)
+          left: -20px
       p
         font-family: $calibre-medium
         margin: 7.5px 0 5px
@@ -209,9 +239,15 @@ main
         width: 100%
         display: flex
         flex-wrap: wrap
+        margin-top: auto
+        @media only screen and (min-width: $large)
+          justify-content: flex-end
+          margin-top: -25px
         .app-icon
           width: 20%
           text-align: center
+          @media only screen and (min-width: $large)
+            width: 16.6666%
           img
             width: 40px
           p
@@ -221,10 +257,18 @@ main
   .feedback-container
     order: 2
     width: 100%
+    position: relative
     @media only screen and (min-width: $medium)
       width: 50%
       order: 1
-      border-top: $light-box-border
+      &::before
+        width: calc(100% - 15px)
+        position: absolute
+        top: 0
+        left: 15px
+        background-color: $light-box-border
+        height: 2px
+        content: ''
     .like-less
       display: block
       @media only screen and (min-width: $medium)
@@ -252,7 +296,6 @@ main
           padding: 7.5px 0
       .thumbs-down
         vertical-align: -6px
-        margin-left: 3.5px
   .our-winner
     position: absolute
     top: -32px
