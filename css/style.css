@@ -20,7 +20,7 @@ main {
 
 .reviewCard-outer {
   width: calc(100% - 5px);
-  margin: 0 auto 40px;
+  margin: 0 auto 40px
   border: 1px solid #f0f0f0;
   width: 312px;
   position: relative; }
