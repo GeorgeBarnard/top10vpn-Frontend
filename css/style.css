@@ -171,7 +171,7 @@ main {
         height: 16px;
         width: 100%;
         color: #B9B9B9;
-        font-family: "Calibre-Medium", Fallback, sans-serif; }
+        font-family: "Calibre-Regular", Fallback, sans-serif; }
     .reviewCard-outer .top-section .add-to-compare-section {
       display: flex;
       justify-content: center;
