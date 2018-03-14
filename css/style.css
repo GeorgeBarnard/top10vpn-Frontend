@@ -229,7 +229,7 @@ main {
     position: relative;
     background-color: rgba(238, 238, 238, 0.3);
     width: 100%;
-    padding: 10px 5px 16px;
+    padding: 8.5px 9.5px 16px;
     box-sizing: border-box;
     order: 1; }
     @media only screen and (min-width: 768px) {
@@ -391,6 +391,8 @@ main {
         @media only screen and (min-width: 1024px) {
           .reviewCard-outer .feedback-container .our-feedback .feedback-headings {
             padding-left: 22px; } }
+      .reviewCard-outer .feedback-container .our-feedback .less-heading {
+        margin-top: -10px; }
       .reviewCard-outer .feedback-container .our-feedback ul {
         padding-left: 25px;
         margin-top: 0;
