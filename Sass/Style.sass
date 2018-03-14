@@ -15,10 +15,12 @@ main
   position: relative
   @media only screen and (min-width: $medium)
     width: 680px
+    height: 449px
     display: flex
     flex-wrap: wrap
   @media only screen and (min-width: $large)
     width: 890px
+    height: 384px
     border: $box-border-large
   .top-section
     display: flex
@@ -28,26 +30,23 @@ main
       margin: 0 auto
     @media only screen and (min-width: $large)
       width: 100%
-      padding: 0 24px
+      padding: 0 23px
       box-sizing: border-box
     .logo-section
       width: $Mob-full
-      margin-top: 0
-      padding: 16px 0 0 0
-      margin-bottom: 8px
+      height: fit-content
+      margin: 16px 0 8px 0
       box-sizing: border-box
       display: flex
       justify-content: center
       @media only screen and (min-width: $medium)
         width: 148px
-        padding: 16px 0
-        margin: 0
+        margin: 16px 0 0 0
         img
           width: 100%
           height: 96px
       @media only screen and (min-width: $large)
         width: 160px
-        height: 136px
     .vpn-info-wrapper
       width: 100%
       @media only screen and (min-width: $medium)
@@ -69,19 +68,22 @@ main
           justify-content: left
           align-items: flex-start
           padding: 0
-          margin-top: 15px
+          margin-top: 16px
         @media only screen and (min-width: $large)
           margin-top: 20px
+          margin-bottom: 16px
         .rating-title
           display: none
           @media only screen and (min-width: $medium)
-            font-family: $calibre-medium
+            font-family: $calibre-regular
             font-size: 22px
             display: block
             width: 100%
             margin: 0
+            height: 24px
         .rating-text
           margin: 0
+          height: 24px
           span
             img
               vertical-align: -4px
@@ -91,20 +93,26 @@ main
             vertical-align: -7px
             margin-top: 2.5px
       .main-description-section
-        margin-bottom: 16px
+        margin-bottom: 0px
         p
           font-size: 24px
           text-align: center
           color: $dark-blue
           font-family: $calibre-medium
           width: 90%
-          margin: 0 auto
+          margin: 0 auto 16px
           font-weight: 500
+          line-height: 24px
           @media only screen and (min-width: $medium)
             text-align: left
             font-size: 22px
             width: 100%
+            height: 80px
             margin: 0
+          @media only screen and (min-width: $large)
+            height: 56px
+            margin: 0
+            line-height: 27px
     .visit-link-section
       display: flex
       flex-wrap: wrap
@@ -122,6 +130,7 @@ main
       p
         text-align: center
         margin: 0
+        height: 16px
         width: 100%
         color: $caption-colour
         font-family: $calibre-medium
@@ -129,38 +138,49 @@ main
       display: flex
       justify-content: center
       align-items: center
-      margin: 0 auto 16px
+      margin: 0px auto 16px
       @media only screen and (min-width: $medium)
         margin-bottom: auto
-        margin: -56px 10px 0 0px
+        margin: -59px 10px 0 0px
       @media only screen and (min-width: $large)
         margin-bottom: auto
-        margin: -25px 10px 15px 0px
+        margin: -19px 10px 11px 0px
       .add-button
         cursor: pointer
         width: 30px
         height: 30px
-        margin: 1.5px 7.5px 0 0
+        margin: 0 7.5px 0 0
         border: $checkBox
         box-sizing: border-box
         display: flex
         justify-content: center
         align-items: center
         color: $checkBoxColour
+        background-size: cover
         p
           font-size: 26px
           margin: -1px 0 0 0
         @media only screen and (min-width: $medium)
           width: 24px
           height: 24px
+          margin-left: 4px
+          background-size: 20px
+          img
+            width: 20px
+        @media only screen and (min-width: $large)
+          margin-left: 4px
       p
         margin: 0
         display: inline-flex
         font-size: 20px
-        font-family: $calibre-medium
+        font-family: $calibre-regular
         font-weight: 500
+        margin-top: -4px
         @media only screen and (min-width: $medium)
           font-size: 18px
+          margin-top: -2px
+        @media only screen and (min-width: $large)
+          margin-top: -4px
   .grid-section
     position: relative
     background-color: $grid-box
@@ -168,35 +188,50 @@ main
     padding: 10px 5px
     box-sizing: border-box
     order: 1
-    &::before
-      width: calc(100% - 15px)
-      position: absolute
-      top: 0
-      left: 0
-      background-color: $light-box-border
-      height: 2px
-      content: ''
+    @media only screen and (min-width: $medium)
+      &::before
+        width: calc(100% - 16px)
+        position: absolute
+        top: 0
+        left: 0
+        background-color: $light-box-border
+        height: 1px
+        content: ''
+        @media only screen and (min-width: $medium)
+          width: calc(100% - 24px)
     @media only screen and (min-width: $medium)
       width: 50%
       order: 2
-      padding: 10px 20px
-      border-left: 2px solid $light-box-border
+      padding: 8px 18px
+      border-left: 1px solid $light-box-border
+    @media only screen and (min-width: $large)
+      padding: 14px 18px 10px
     table
       width: 100%
       border-collapse: collapse
       padding: 10px
       box-sizing: border-box
       @media only screen and (min-width: $medium)
-        margin-bottom: 10px
+        margin-bottom: 7.5px
       .row
         padding: 0 10px
         border-bottom: $grey-border
         @media only screen and (min-width: $medium)
           border-bottom: none
         th
+          vertical-align: middle
           text-align: left
           padding: 7.5px 0
+          height: 24px
+          @media only screen and (min-width: $medium)
+            vertical-align: top
+            padding: 0 0 8px
           &:first-child
+            width: 50%
+            @media only screen and (min-width: $medium)
+              width: 174px
+            @media only screen and (min-width: $large)
+              width: 50%
             p
               font-family: $calibre-medium
               font-weight: 500
@@ -209,7 +244,7 @@ main
               font-weight: 300
             a
               p
-                font-family: $calibre-medium
+                font-family: $calibre-regular
                 font-weight: 500
               &:-webkit-any-link
                 text-decoration: none
@@ -229,14 +264,14 @@ main
           left: -20px
           top: -2.5px
           background-color: $light-box-border
-          height: 2px
+          height: 1px
       @media only screen and (min-width: $large)
         &::before
           width: calc(100% + 20px)
           left: -20px
       p
         font-family: $calibre-medium
-        margin: 7.5px 0 5px
+        margin: 5.5px 0 5px
         font-size: 18px
       .icon-container
         width: 100%
@@ -250,7 +285,7 @@ main
           width: 20%
           text-align: center
           @media only screen and (min-width: $large)
-            width: 16.6666%
+            width: 17.6666%
           img
             width: 40px
           p
@@ -265,13 +300,16 @@ main
       width: 50%
       order: 1
       &::before
-        width: calc(100% - 15px)
+        width: calc(100% - 16px)
         position: absolute
         top: 0
-        left: 15px
+        left: 16px
         background-color: $light-box-border
-        height: 2px
+        height: 1px
         content: ''
+        @media only screen and (min-width: $large)
+          width: calc(100% - 24px)
+          left: 24px
     .like-less
       display: block
       @media only screen and (min-width: $medium)
@@ -286,34 +324,53 @@ main
         padding-left: 7.5px
         margin-bottom: 0
         font-weight: 500
+        height: 32px
+        margin-top: 14px
         @media only screen and (min-width: $medium)
-          padding-left: 15px
+          padding-left: 16px
+        @media only screen and (min-width: $large)
+          padding-left: 22px
       ul
         padding-left: 25px
-        margin-top: 7.5px
+        margin-top: 0
         max-width: 85%
         @media only screen and (min-width: $medium)
           padding-left: 32.5px
+        @media only screen and (min-width: $large)
+          padding-left: 37.5px
         li
-          font-size: 18px
+          font-size: 13px
           font-family: $calibre-light
-          padding: 7.5px 0
+          width: 261px
+          padding: 0
+          margin-bottom: 4px
+          @media only screen and (min-width: $medium)
+            width: 280px
+          @media only screen and (min-width: $large)
+            padding: 0 0 12px
+            margin-bottom: 0px
+            width: 375px
+          span
+            font-size: 18px
       .thumbs-down
         vertical-align: -6px
   .our-winner
     position: absolute
-    top: -32px
+    top: -33px
+    left: -1px
     width: 157px
     height: 32px
     background-color: $mint-green
     display: flex
     align-items: center
-    justify-content: flex-start
+    justify-content: center
+    @media only screen and (min-width: $large)
+      top: -34px
+      left: -2px
     p
       margin: 0
       font-family: $calibre-medium
       font-size: 18px
-      padding-left: 7.5px
       font-weight: 500
 
 // Buttons
@@ -333,6 +390,7 @@ main
   font-size: 26px
   color: $button-color
   transition: $transition
+  margin-bottom: 4px
   &:hover
     background-color: $button-background-hover
   img
@@ -343,5 +401,6 @@ main
     img
       display: inline-block
       vertical-align: -2px
+      margin-left: 10px
   @media only screen and (min-width: $large)
-    margin-top: 25px
+    margin-top: 24px

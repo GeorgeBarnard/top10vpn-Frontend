@@ -6,12 +6,17 @@
 /* Colors */
 /* Buttons */
 @font-face {
-  font-family: "Calibre-light";
+  font-family: "Calibre-Light";
   src: url("/fonts/calibre/CalibreWeb-Light.woff2") format("woff2"), url("/fonts/calibre/CalibreWeb-Light.woff") format("woff"), url("/fonts/calibre/CalibreWeb-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "Calibre-medium";
+  font-family: "Calibre-Regular";
+  src: url("/fonts/calibre/CalibreWeb-Regular.woff2") format("woff2"), url("/fonts/calibre/CalibreWeb-Regular.woff") format("woff"), url("/fonts/calibre/CalibreWeb-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Calibre-Medium";
   src: url("/fonts/calibre/CalibreWeb-Medium.woff2") format("woff2"), url("/fonts/calibre/CalibreWeb-Medium.woff") format("woff"), url("/fonts/calibre/CalibreWeb-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
@@ -31,11 +36,13 @@ main {
   @media only screen and (min-width: 768px) {
     .reviewCard-outer {
       width: 680px;
+      height: 449px;
       display: flex;
       flex-wrap: wrap; } }
   @media only screen and (min-width: 1024px) {
     .reviewCard-outer {
       width: 890px;
+      height: 384px;
       border: 2px solid #f0f0f0; } }
   .reviewCard-outer .top-section {
     display: flex;
@@ -47,28 +54,25 @@ main {
     @media only screen and (min-width: 1024px) {
       .reviewCard-outer .top-section {
         width: 100%;
-        padding: 0 24px;
+        padding: 0 23px;
         box-sizing: border-box; } }
     .reviewCard-outer .top-section .logo-section {
       width: calc(100% - 5px);
-      margin-top: 0;
-      padding: 16px 0 0 0;
-      margin-bottom: 8px;
+      height: fit-content;
+      margin: 16px 0 8px 0;
       box-sizing: border-box;
       display: flex;
       justify-content: center; }
       @media only screen and (min-width: 768px) {
         .reviewCard-outer .top-section .logo-section {
           width: 148px;
-          padding: 16px 0;
-          margin: 0; }
+          margin: 16px 0 0 0; }
           .reviewCard-outer .top-section .logo-section img {
             width: 100%;
             height: 96px; } }
       @media only screen and (min-width: 1024px) {
         .reviewCard-outer .top-section .logo-section {
-          width: 160px;
-          height: 136px; } }
+          width: 160px; } }
     .reviewCard-outer .top-section .vpn-info-wrapper {
       width: 100%; }
       @media only screen and (min-width: 768px) {
@@ -93,21 +97,24 @@ main {
             justify-content: left;
             align-items: flex-start;
             padding: 0;
-            margin-top: 15px; } }
+            margin-top: 16px; } }
         @media only screen and (min-width: 1024px) {
           .reviewCard-outer .top-section .vpn-info-wrapper .rating-section {
-            margin-top: 20px; } }
+            margin-top: 20px;
+            margin-bottom: 16px; } }
         .reviewCard-outer .top-section .vpn-info-wrapper .rating-section .rating-title {
           display: none; }
           @media only screen and (min-width: 768px) {
             .reviewCard-outer .top-section .vpn-info-wrapper .rating-section .rating-title {
-              font-family: "Calibre-Medium", Fallback, sans-serif;
+              font-family: "Calibre-Regular", Fallback, sans-serif;
               font-size: 22px;
               display: block;
               width: 100%;
-              margin: 0; } }
+              margin: 0;
+              height: 24px; } }
         .reviewCard-outer .top-section .vpn-info-wrapper .rating-section .rating-text {
-          margin: 0; }
+          margin: 0;
+          height: 24px; }
           .reviewCard-outer .top-section .vpn-info-wrapper .rating-section .rating-text span img {
             vertical-align: -4px; }
           .reviewCard-outer .top-section .vpn-info-wrapper .rating-section .rating-text span:nth-child(1) {
@@ -116,21 +123,28 @@ main {
             vertical-align: -7px;
             margin-top: 2.5px; }
       .reviewCard-outer .top-section .vpn-info-wrapper .main-description-section {
-        margin-bottom: 16px; }
+        margin-bottom: 0px; }
         .reviewCard-outer .top-section .vpn-info-wrapper .main-description-section p {
           font-size: 24px;
           text-align: center;
           color: #011443;
           font-family: "Calibre-Medium", Fallback, sans-serif;
           width: 90%;
-          margin: 0 auto;
-          font-weight: 500; }
+          margin: 0 auto 16px;
+          font-weight: 500;
+          line-height: 24px; }
           @media only screen and (min-width: 768px) {
             .reviewCard-outer .top-section .vpn-info-wrapper .main-description-section p {
               text-align: left;
               font-size: 22px;
               width: 100%;
+              height: 80px;
               margin: 0; } }
+          @media only screen and (min-width: 1024px) {
+            .reviewCard-outer .top-section .vpn-info-wrapper .main-description-section p {
+              height: 56px;
+              margin: 0;
+              line-height: 27px; } }
     .reviewCard-outer .top-section .visit-link-section {
       display: flex;
       flex-wrap: wrap;
@@ -150,6 +164,7 @@ main {
       .reviewCard-outer .top-section .visit-link-section p {
         text-align: center;
         margin: 0;
+        height: 16px;
         width: 100%;
         color: #B9B9B9;
         font-family: "Calibre-Medium", Fallback, sans-serif; }
@@ -157,42 +172,55 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0 auto 16px; }
+      margin: 0px auto 16px; }
       @media only screen and (min-width: 768px) {
         .reviewCard-outer .top-section .add-to-compare-section {
           margin-bottom: auto;
-          margin: -56px 10px 0 0px; } }
+          margin: -59px 10px 0 0px; } }
       @media only screen and (min-width: 1024px) {
         .reviewCard-outer .top-section .add-to-compare-section {
           margin-bottom: auto;
-          margin: -25px 10px 15px 0px; } }
+          margin: -19px 10px 11px 0px; } }
       .reviewCard-outer .top-section .add-to-compare-section .add-button {
         cursor: pointer;
         width: 30px;
         height: 30px;
-        margin: 1.5px 7.5px 0 0;
+        margin: 0 7.5px 0 0;
         border: 2px solid #979797;
         box-sizing: border-box;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #979797; }
+        color: #979797;
+        background-size: cover; }
         .reviewCard-outer .top-section .add-to-compare-section .add-button p {
           font-size: 26px;
           margin: -1px 0 0 0; }
         @media only screen and (min-width: 768px) {
           .reviewCard-outer .top-section .add-to-compare-section .add-button {
             width: 24px;
-            height: 24px; } }
+            height: 24px;
+            margin-left: 4px;
+            background-size: 20px; }
+            .reviewCard-outer .top-section .add-to-compare-section .add-button img {
+              width: 20px; } }
+        @media only screen and (min-width: 1024px) {
+          .reviewCard-outer .top-section .add-to-compare-section .add-button {
+            margin-left: 4px; } }
       .reviewCard-outer .top-section .add-to-compare-section p {
         margin: 0;
         display: inline-flex;
         font-size: 20px;
-        font-family: "Calibre-Medium", Fallback, sans-serif;
-        font-weight: 500; }
+        font-family: "Calibre-Regular", Fallback, sans-serif;
+        font-weight: 500;
+        margin-top: -4px; }
         @media only screen and (min-width: 768px) {
           .reviewCard-outer .top-section .add-to-compare-section p {
-            font-size: 18px; } }
+            font-size: 18px;
+            margin-top: -2px; } }
+        @media only screen and (min-width: 1024px) {
+          .reviewCard-outer .top-section .add-to-compare-section p {
+            margin-top: -4px; } }
   .reviewCard-outer .grid-section {
     position: relative;
     background-color: rgba(238, 238, 238, 0.3);
@@ -200,20 +228,28 @@ main {
     padding: 10px 5px;
     box-sizing: border-box;
     order: 1; }
+    @media only screen and (min-width: 768px) {
+      .reviewCard-outer .grid-section::before {
+        width: calc(100% - 16px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #EEEEEE;
+        height: 1px;
+        content: ""; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
     .reviewCard-outer .grid-section::before {
-      width: calc(100% - 15px);
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: #EEEEEE;
-      height: 2px;
-      content: ""; }
+      width: calc(100% - 24px); } }
+
     @media only screen and (min-width: 768px) {
       .reviewCard-outer .grid-section {
         width: 50%;
         order: 2;
-        padding: 10px 20px;
-        border-left: 2px solid #EEEEEE; } }
+        padding: 8px 18px;
+        border-left: 1px solid #EEEEEE; } }
+    @media only screen and (min-width: 1024px) {
+      .reviewCard-outer .grid-section {
+        padding: 14px 18px 10px; } }
     .reviewCard-outer .grid-section table {
       width: 100%;
       border-collapse: collapse;
@@ -221,7 +257,7 @@ main {
       box-sizing: border-box; }
       @media only screen and (min-width: 768px) {
         .reviewCard-outer .grid-section table {
-          margin-bottom: 10px; } }
+          margin-bottom: 7.5px; } }
       .reviewCard-outer .grid-section table .row {
         padding: 0 10px;
         border-bottom: 1px solid #E2E2E2; }
@@ -229,11 +265,25 @@ main {
           .reviewCard-outer .grid-section table .row {
             border-bottom: none; } }
         .reviewCard-outer .grid-section table .row th {
+          vertical-align: middle;
           text-align: left;
-          padding: 7.5px 0; }
-          .reviewCard-outer .grid-section table .row th:first-child p {
-            font-family: "Calibre-Medium", Fallback, sans-serif;
-            font-weight: 500; }
+          padding: 7.5px 0;
+          height: 24px; }
+          @media only screen and (min-width: 768px) {
+            .reviewCard-outer .grid-section table .row th {
+              vertical-align: top;
+              padding: 0 0 8px; } }
+          .reviewCard-outer .grid-section table .row th:first-child {
+            width: 50%; }
+            @media only screen and (min-width: 768px) {
+              .reviewCard-outer .grid-section table .row th:first-child {
+                width: 174px; } }
+            @media only screen and (min-width: 1024px) {
+              .reviewCard-outer .grid-section table .row th:first-child {
+                width: 50%; } }
+            .reviewCard-outer .grid-section table .row th:first-child p {
+              font-family: "Calibre-Medium", Fallback, sans-serif;
+              font-weight: 500; }
           .reviewCard-outer .grid-section table .row th:last-child p {
             padding-left: 10px;
             border-left: 1px solid #E2E2E2;
@@ -241,7 +291,7 @@ main {
             font-family: "Calibre-light", Fallback, sans-serif;
             font-weight: 300; }
           .reviewCard-outer .grid-section table .row th:last-child a p {
-            font-family: "Calibre-Medium", Fallback, sans-serif;
+            font-family: "Calibre-Regular", Fallback, sans-serif;
             font-weight: 500; }
           .reviewCard-outer .grid-section table .row th:last-child a:-webkit-any-link {
             text-decoration: none; }
@@ -261,14 +311,14 @@ main {
           left: -20px;
           top: -2.5px;
           background-color: #EEEEEE;
-          height: 2px; } }
+          height: 1px; } }
       @media only screen and (min-width: 1024px) {
         .reviewCard-outer .grid-section .app-section::before {
           width: calc(100% + 20px);
           left: -20px; } }
       .reviewCard-outer .grid-section .app-section p {
         font-family: "Calibre-Medium", Fallback, sans-serif;
-        margin: 7.5px 0 5px;
+        margin: 5.5px 0 5px;
         font-size: 18px; }
       .reviewCard-outer .grid-section .app-section .icon-container {
         width: 100%;
@@ -284,7 +334,7 @@ main {
           text-align: center; }
           @media only screen and (min-width: 1024px) {
             .reviewCard-outer .grid-section .app-section .icon-container .app-icon {
-              width: 16.6666%; } }
+              width: 17.6666%; } }
           .reviewCard-outer .grid-section .app-section .icon-container .app-icon img {
             width: 40px; }
           .reviewCard-outer .grid-section .app-section .icon-container .app-icon p {
@@ -300,13 +350,18 @@ main {
         width: 50%;
         order: 1; }
         .reviewCard-outer .feedback-container::before {
-          width: calc(100% - 15px);
+          width: calc(100% - 16px);
           position: absolute;
           top: 0;
-          left: 15px;
+          left: 16px;
           background-color: #EEEEEE;
-          height: 2px;
+          height: 1px;
           content: ""; } }
+    @media only screen and (min-width: 768px) and (min-width: 1024px) {
+      .reviewCard-outer .feedback-container::before {
+        width: calc(100% - 24px);
+        left: 24px; } }
+
     .reviewCard-outer .feedback-container .like-less {
       display: block; }
       @media only screen and (min-width: 768px) {
@@ -321,37 +376,61 @@ main {
         font-size: 18px;
         padding-left: 7.5px;
         margin-bottom: 0;
-        font-weight: 500; }
+        font-weight: 500;
+        height: 32px;
+        margin-top: 14px; }
         @media only screen and (min-width: 768px) {
           .reviewCard-outer .feedback-container .our-feedback .feedback-headings {
-            padding-left: 15px; } }
+            padding-left: 16px; } }
+        @media only screen and (min-width: 1024px) {
+          .reviewCard-outer .feedback-container .our-feedback .feedback-headings {
+            padding-left: 22px; } }
       .reviewCard-outer .feedback-container .our-feedback ul {
         padding-left: 25px;
-        margin-top: 7.5px;
+        margin-top: 0;
         max-width: 85%; }
         @media only screen and (min-width: 768px) {
           .reviewCard-outer .feedback-container .our-feedback ul {
             padding-left: 32.5px; } }
+        @media only screen and (min-width: 1024px) {
+          .reviewCard-outer .feedback-container .our-feedback ul {
+            padding-left: 37.5px; } }
         .reviewCard-outer .feedback-container .our-feedback ul li {
-          font-size: 18px;
+          font-size: 13px;
           font-family: "Calibre-light", Fallback, sans-serif;
-          padding: 7.5px 0; }
+          width: 261px;
+          padding: 0;
+          margin-bottom: 4px; }
+          @media only screen and (min-width: 768px) {
+            .reviewCard-outer .feedback-container .our-feedback ul li {
+              width: 280px; } }
+          @media only screen and (min-width: 1024px) {
+            .reviewCard-outer .feedback-container .our-feedback ul li {
+              padding: 0 0 12px;
+              margin-bottom: 0px;
+              width: 375px; } }
+          .reviewCard-outer .feedback-container .our-feedback ul li span {
+            font-size: 18px; }
       .reviewCard-outer .feedback-container .our-feedback .thumbs-down {
         vertical-align: -6px; }
   .reviewCard-outer .our-winner {
     position: absolute;
-    top: -32px;
+    top: -33px;
+    left: -1px;
     width: 157px;
     height: 32px;
     background-color: #34E0A7;
     display: flex;
     align-items: center;
-    justify-content: flex-start; }
+    justify-content: center; }
+    @media only screen and (min-width: 1024px) {
+      .reviewCard-outer .our-winner {
+        top: -34px;
+        left: -2px; } }
     .reviewCard-outer .our-winner p {
       margin: 0;
       font-family: "Calibre-Medium", Fallback, sans-serif;
       font-size: 18px;
-      padding-left: 7.5px;
       font-weight: 500; }
 
 .large-button {
@@ -368,7 +447,8 @@ main {
   font-family: "Calibre-Medium", Fallback, sans-serif;
   font-size: 26px;
   color: #ffffff;
-  transition: 0.2s ease-in; }
+  transition: 0.2s ease-in;
+  margin-bottom: 4px; }
   .large-button:hover {
     background-color: #0000cc; }
   .large-button img {
@@ -379,9 +459,10 @@ main {
       margin-top: 16px; }
       .large-button img {
         display: inline-block;
-        vertical-align: -2px; } }
+        vertical-align: -2px;
+        margin-left: 10px; } }
   @media only screen and (min-width: 1024px) {
     .large-button {
-      margin-top: 25px; } }
+      margin-top: 24px; } }
 
 /*# sourceMappingURL=style.css.map */
